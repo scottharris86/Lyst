@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+
+ .nav {
+    height: 50px;
+
+ }
+
+ .nav ul{
+    margin-left: 75px;
+    margin-top: -40px;
+
+ }
+ .nav li { 
+    list-style: none;
+    padding: 10px;
+    background-color: gray;
+    width: 60px;
+ }
+ .nav h1  {
+    padding: 10px;
+    
+ }
+ .nav a{
+    color: black;
+    
+ }
+ .nav a:hover {
+    background-color: inherit;
+ }
+
+ div.alert {
+    border: 2px solid #aaa;
+    padding: 10px;
+ }
+
+ div.flash.success {
+    border: 2px solid green;
+    color: green
+ }
+div.flash.error {
+    border: 2px solid red;
+    color: red
+ }
+div.flash.notice {
+    border: 2px solid blue;
+    color: blue
+ }

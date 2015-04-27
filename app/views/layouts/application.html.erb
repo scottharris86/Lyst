@@ -8,6 +8,20 @@
 </head>
 <body>
 
+  <div class="nav">
+    <h1><%= link_to "Lyst", root_path %></h1>
+    <ul>
+      <li><%= link_to "Todo List", todo_lists_path %></li>
+    </ul>
+    <br class="clear" />
+  </div>
+  <hr />
+
+<% flash.each do |type, message| %>
+  <div class="alert flash <%= type %>">
+    <%= message %>
+  </div>
+  <% end %>
 <%= yield %>
 
 </body>
